@@ -23,5 +23,23 @@ function encryptText(text, key){
 }
 
 function decryptText(encryptedText, key){
-    
+    let decryptedText ="";
+
+
+    for(let i=0; i < encryptedText.length; i++){
+        const encryptedChar = encryptedText[i];
+        const keyChar = key[i % key.length];
+
+        const encryptedIndex = alphabet.indexOf(encryptedChar);
+        const keyIndex = alphabet.indexOf(keyChar);
+
+        if(encryptedText === -1){
+            decryptedText += encryptedChar;
+        }else{
+            let newIndex = encryptedChar - keyIndex;
+
+            if(newIndex < 0) newIndex += alphabet.length;
+            decryptedText += alphabet[newIndex];            
+        }
+    }
 }
