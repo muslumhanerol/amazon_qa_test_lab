@@ -62,3 +62,6 @@ function updateResult(isEncrypting){
 }
 
 
+document.getElementById("enc-btn").addEventListener('click', function(){
+    updateResult(true);
+})
