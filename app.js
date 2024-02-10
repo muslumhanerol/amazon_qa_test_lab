@@ -69,3 +69,8 @@ document.getElementById("enc-btn").addEventListener('click', function(){
 document.getElementById("dec-btn").addEventListener('click', function(){
     updateResult(false);
 });
+
+
+document.addEventListener('DOMContentLoaded', () =>{
+    updateResult(true);
+});
