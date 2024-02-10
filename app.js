@@ -42,4 +42,18 @@ function decryptText(encryptedText, key){
             decryptedText += alphabet[newIndex];            
         }
     }
+
+    return decryptedText;
+}
+
+function updateResult(isEncrypting){
+    const text = document.getElementById("message").value;
+    const key = document.getElementById("key").value;
+
+    let result = "";
+
+    if(isEncrypting){
+        result = encryptText(text, key);
+
+    }
 }
