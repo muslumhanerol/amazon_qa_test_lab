@@ -54,6 +54,11 @@ function updateResult(isEncrypting){
 
     if(isEncrypting){
         result = encryptText(text, key);
-
+    }else{
+        result = decryptText(text, key);
     }
+
+    document.getElementById("result").textContent = result;
 }
+
+
