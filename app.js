@@ -8,5 +8,20 @@ function encryptText(text, key){
         const keyChar = key[i % key.length];
 
         const textIndex = alphabet.indexOf(textChar);
+        const keyIndex = alphabet.indexOf(keyChar);
+
+        if(textIndex === -1){
+            encryptText += textChar;
+        }else{
+            const newIndex = (textIndex + keyIndex) % alphabet.length;
+
+            encryptedText += alphabet[newIndex];
+        }
     }
+
+    return encryptedText;
+}
+
+function decryptText(encryptedText, key){
+    
 }
