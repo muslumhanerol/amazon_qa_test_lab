@@ -1,4 +1,4 @@
-const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,?!'_-&@#$%*()/:<>|+!'^+= "
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,?!'_-&@#$%*()/:<>|+!'^+= ";
 
 function encryptText(text, key){
     let encryptText = "";
@@ -26,7 +26,7 @@ function decryptText(encryptedText, key){
     let decryptedText ="";
 
 
-    for(let i=0; i < encryptedText.length; i++){
+    for(let i =0; i < encryptedText.length; i++){
         const encryptedChar = encryptedText[i];
         const keyChar = key[i % key.length];
 
@@ -36,8 +36,7 @@ function decryptText(encryptedText, key){
         if(encryptedText === -1){
             decryptedText += encryptedChar;
         }else{
-            let newIndex = encryptedChar - keyIndex;
-
+            let newIndex = encryptedIndex - keyIndex;
             if(newIndex < 0) newIndex += alphabet.length;
             decryptedText += alphabet[newIndex];            
         }
@@ -73,4 +72,4 @@ document.getElementById("dec-btn").addEventListener('click', function(){
 
 document.addEventListener('DOMContentLoaded', () =>{
     updateResult(true);
-});
+}); 
