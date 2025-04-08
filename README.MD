@@ -5,3 +5,6 @@
 
 # For Selenium
 # https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/4.30.0
+
+
+# https://mvnrepository.com/artifact/org.testng/testng/7.11.0
