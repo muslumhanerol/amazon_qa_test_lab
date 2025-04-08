@@ -1,4 +1,4 @@
-# mİGROS_qa_test_lab
+# donanim_haber_qa_test_lab
 
 # IntelliJ IDEA for Microsoft
 # https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC
