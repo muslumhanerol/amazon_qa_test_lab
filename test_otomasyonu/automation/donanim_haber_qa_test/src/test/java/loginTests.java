@@ -10,6 +10,8 @@ public class loginTests {
         WebDriver driver = new ChromeDriver();
         driver.get("https://forum.donanimhaber.com/login?returnUrl=https://www.donanimhaber.com&token=&type=&Platform=");
         driver.findElement(By.id("LoginName")).sendKeys("mslmhanerol@gmail.com");
+        driver.findElement(By.name("Password")).sendKeys("Denemedonanim123");
+        driver.findElement(By.id("SubmitButton")).click();
     }
 }
 
