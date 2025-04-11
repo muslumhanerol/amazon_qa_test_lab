@@ -13,7 +13,5 @@ public class LoginTests {
         driver.findElement(By.cssSelector("[class='a-button-input']")).click();
         driver.findElement(By.id("ap_password")).sendKeys("AMAZONDENEME");
         driver.findElement(By.cssSelector("[class='a-button-input']")).click();
-
-
     }
 }
