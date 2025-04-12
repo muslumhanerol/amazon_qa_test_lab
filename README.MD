@@ -1,5 +1,7 @@
 # amazon_qa_test_lab
 
+# Allure Report Link: http://127.0.0.1:53475/#suites/26ca2d017cdafb6da9572fb0ce4815ec/5d05d0445185b348/
+
 # IntelliJ IDEA for Microsoft
 # https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC
 
