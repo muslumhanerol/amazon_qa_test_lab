@@ -12,23 +12,23 @@ public class LoginTests extends BaseTest {
     LoginPage loginPage = new LoginPage();
     MainPage mainPage = new MainPage();
 
-    @Test
+    @Test(description = "Başarılı kullanıcı girisi.")
     public void basariliGiris() {
         loginPage.fillEmail(email)
                 .clickLoginEmail()
                 .fillPassword(password)
-                .clickLoginPaaword();
+                .clickLoginPassword();
         sleep(3000);
 
         mainPage.accountControl();
     }
 
-    @Test
+    @Test(description = "Başarısız kullanıcı girisi.")
     public void basarisizGiris() {
         loginPage.fillEmail(email)
                 .clickLoginEmail()
-                .fillPassword(password)
-                .clickLoginPaaword();
+                .fillPassword("AMAZONDENEME123")
+                .clickLoginPassword();
         sleep(3000);
 
        loginPage.errorMessageController("Şifreniz yanlış");
