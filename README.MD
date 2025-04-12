@@ -14,3 +14,6 @@
 
 # For Allure Report allure-2.33.0.zip
 # https://github.com/allure-framework/allure2/releases/tag/2.33.0
+
+# For Allure Report From mvnrepository
+# https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
