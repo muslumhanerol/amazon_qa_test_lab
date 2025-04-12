@@ -16,4 +16,7 @@
 # https://github.com/allure-framework/allure2/releases/tag/2.33.0
 
 # For Allure Report From mvnrepository
-# https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
+# https://mvnrepository.com/artifact/io.qameta.allure/allure-testng/2.29.1
+
+# aspectjweaver 
+# https://mvnrepository.com/artifact/org.aspectj/aspectjweaver/1.9.23
