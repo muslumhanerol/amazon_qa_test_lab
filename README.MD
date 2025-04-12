@@ -8,3 +8,9 @@
 
 # For Play Button
 # https://mvnrepository.com/artifact/org.testng/testng/7.11.0
+
+# For Allure Report
+# https://allurereport.org/docs/install-for-windows/
+
+# For Allure Report allure-2.33.0.zip
+# https://github.com/allure-framework/allure2/releases/tag/2.33.0
