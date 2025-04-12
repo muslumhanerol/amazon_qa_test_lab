@@ -2,6 +2,7 @@ package Pages;
 
 import Base.BaseTest;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 
 public class LoginPage extends BaseTest {
 
@@ -27,4 +28,10 @@ public class LoginPage extends BaseTest {
 
     }
 
+    public  LoginPage errorMessageController(String value){
+
+        String text = driver.findElement(By.cssSelector("[class='a-alert-content']")).getText();
+        Assert.assertEquals(text, value);
+        return this;
+    }
 }
